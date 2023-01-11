@@ -66,7 +66,7 @@ docker build -t wordlex .
 Then run the image:
 
 ```
-docker run --rm --mount type=bind,src="$(pwd)",target=/app --name WordleX -p 24263:80 wordlex
+docker run --rm -d --name WordleX -p 24263:80 wordlex
 ```
 
 Go to http://localhost:24263.
