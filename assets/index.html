@@ -13,15 +13,16 @@
   <body class="dark">
     <div id="app" class="container main-container">
 
-      <div class="header"><h1>WordleX</h1>
+      <div class="header">
+        <h1>WordleX</h1>
         <div style="float: right; padding-right: 20px;"><button title="How to Play" onclick="alert('WordleX is essentially a clone of the popular Wordle online puzzle - but while you can only play Wordle once per day, you can play WordleX as many times as you like.\n\nHow to Play:\n\nThe goal of the game is to guess the 5-letter target word. To do so, you enter guesses and the game will give you feedback that you can use in your next guess...\n\n(scroll down for more)\n\n* An unmarked letter is not present in the target word.\n* A letter marked in red is present in the target word but in the wrong spot.\n* A letter marked in green is present in the target word and in the correct spot.\n\nAll submitted guesses have to be valid words found in a dictionary. To help you with your next guess, the keyboard at the bottom of the screen will highlight the status of each letter that you have used in your guesses.')">?</button></div>
-      <div>
-      <div v-on:click="toggleDarkMode">
-        <div v-if="darkMode">
-          <i class="bi bi-brightness-high" title="Disable Dark Mode"></i>
-        </div>
-        <div v-else>
-          <i class="bi bi-moon-stars-fill" title="Switch to Dark Mode"></i>
+        <div v-on:click="toggleDarkMode">
+          <div v-if="darkMode">
+            <i class="bi bi-brightness-high" title="Disable Dark Mode"></i>
+          </div>
+          <div v-else>
+            <i class="bi bi-moon-stars-fill" title="Switch to Dark Mode"></i>
+          </div>
         </div>
       </div>
 
