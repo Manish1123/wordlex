@@ -39,8 +39,8 @@ To help you with your next guess, the keyboard at the bottom of the screen will 
 Clone this repo:
 
 ```
-git clone https://github.com/don-ferris/WordleX.git
-cd WordleX
+git clone https://github.com/don-ferris/wordlex.git
+cd wordlex
 ```
 
 There are two options for runnning the program: with Node.JS or in Docker.
@@ -49,24 +49,24 @@ There are two options for runnning the program: with Node.JS or in Docker.
 
 Make sure you have Node.JS 16 installed.
 
-In the `WordleX` directory, install the dependencies using `yarn install` or `npm install`.
+In the `wordlex` directory, install the dependencies using `yarn install` or `npm install`.
 
 Run the server: `npm start`.
 
-Go to http://localhost:3333.
+Go to http://localhost:24263.
 
 ### Running with Docker
 
-In the `WordleX` directory, issue the following command to prepare the Docker image:
+In the `wordlex` directory, issue the following command to prepare the Docker image:
 
 ```
-docker build -t WordleX .
+docker build -t wordlex .
 ```
 
 Then run the image:
 
 ```
-docker run --rm -p "3333:80" WordleX
+docker run --rm --mount type=bind,src="$(pwd)",target=/app --name WordleX -p 24263:80 wordlex
 ```
 
-Go to http://localhost:3333.
+Go to http://localhost:24263.
