@@ -49,10 +49,10 @@ body.dark .board-row.current {
 
 .tile {
   background-color:#ddd;
-  border-radius:10px;
+  border-radius:15px;
   width:62px;
   height:62px;
-  margin:5px;
+  margin:10px;
   line-height:62px;
   font-family:monospace;
   font-size:3em;
